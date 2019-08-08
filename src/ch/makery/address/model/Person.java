@@ -16,11 +16,8 @@ import javafx.beans.property.StringProperty;
  */
 public class Person {
 
-    private final StringProperty firstName;
-    private final StringProperty lastName;
-    private final StringProperty street;
+    private final StringProperty firstName, lastName, street, city;
     private final IntegerProperty postalCode;
-    private final StringProperty city;
     private final ObjectProperty<LocalDate> birthday;
 
     /**
@@ -118,4 +115,5 @@ public class Person {
     public ObjectProperty<LocalDate> birthdayProperty() {
         return birthday;
     }
+    
 }
